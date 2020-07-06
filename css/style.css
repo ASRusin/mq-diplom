@@ -1,0 +1,396 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(/fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, Arial, sans-serif;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/football_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: #161536;
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.link {
+  text-decoration: none;
+}
+.header_logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+.logo_image {
+  width: 191px;
+  height: 52px;
+  fill: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.header_title {
+  position: relative;
+  z-index: 1;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.second_title {
+  padding-left: 25%;
+}
+.header_buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 220px;
+  padding-bottom: 109px;
+}
+.button {
+  width: 331px;
+  height: 75px;
+  background-color: #5e42b0;
+  border: 1px solid #5e42b0;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:last-child {
+  margin-left: 50px;
+}
+.icon {
+  width: 40px;
+  height: 50px;
+  fill: #ffffff;
+}
+.button_texts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+.button_text {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.button_text:last-child {
+  font-weight: 700;
+}
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+  position: relative;
+}
+.container:last-child {
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.image_mask {
+  position: absolute;
+  top: -10px;
+  left: 20%;
+}
+.position_mask {
+  left: 50%;
+  top: -20px;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.athlets::after {
+  content: "";
+  background-image: url(/images/footballer_566.png);
+  background-repeat: no-repeat;
+  background-position: left 16% top -16%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.players::after {
+  content: "";
+  background-image: url(/images/basketballer_991.png);
+  background-repeat: no-repeat;
+  background-position: right 16% top -16%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.content_title{
+  height: 25%;
+  font-size: 80px;
+  font-weight: 700;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.athlete_title{
+  padding-left: 50%;  
+}
+.athlete_article{
+  padding-right: 15%;
+  padding-left: 50%;
+}
+.article{
+  height: 20%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+.article:last-child{
+  height: 30%;
+}
+.article:nth-child(3n+3){  
+  height: 25%;
+}
+.athlete_article:last-child{
+  background-color: #5e42b0; 
+}
+.athlete_article:nth-child(3n){
+  background-color: #f6f4fa;  
+}
+.article_title{
+  margin: 0;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.number{
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+.number::after{
+  content: "";
+  display: block;
+  width: 19px;
+  height: 2px;
+  background-color: #5e42b0;
+  border: 1px solid #5e42b0;
+  border-radius: 50px;
+}
+.last_number::after{
+  content: "";
+  display: block;
+  width: 19px;
+  height: 2px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+}
+.last_number_player{
+  color: #9173e6
+}
+.title{
+  font-size: 36px;
+  font-weight: 700;
+  color: #c1c1c1;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.article_text{
+  font-size: 20px;
+}
+.last_article{
+  color: #ffffff;
+}
+.player_title{
+  padding-left: 15%;  
+}
+.player_article{
+  padding-right: 50%;
+  padding-left: 15%;
+}
+.player_article:last-child{
+  background-color: #0a0e34; 
+}
+.player_article:nth-child(3n){
+  background-color: #f5f6f7;  
+}
+.last_number_player{
+  color: #9173e6;
+}
+
+.be_active{
+  width: 50%;
+  background-image: url(/images/be-active_1024.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.find_contact{
+  width: 50%;
+  background-image: url(/images/find-contact_1024.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.work_it{
+  width: 50%;
+  background-image: url(/images/work-it_1024.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 60vh;  
+  position: relative;
+}
+
+.news_image {
+  width: 50%;   
+} 
+.news_article {
+  width: calc(50% - 110px);
+  padding-left: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+.rectangle{
+  position: absolute;
+  top: calc(40% - (155px/2));
+  left: calc(50% - (168px/2));
+  right: calc(50% - (168px/2));
+  bottom: calc(60% - (155px/2));
+  width: 168px;
+  height: 155px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #5e42b0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rectangle::after{
+  content: "";
+  display: block;
+  width: 19px;
+  height: 2px;
+  background-color: #8f7bc8;
+  border: 1px solid #8f7bc8;
+  border-radius: 50px;
+}
+.news_title{
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c1c1c1;
+  margin: 0;
+  padding-bottom: 110px;
+}
+.news_text{
+  font-size: 24px;
+  color: #000000;
+  padding-right: 45%;
+}
+.footer {
+  width: 100%;
+  height: 100vh;   
+  background-image: url(/images/game_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  position: relative;
+}
+.footer::after {
+  content: "";
+  background-color: #0a0e34;  
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.footer_icon{
+  width: 120px;
+  height: 127px;
+  fill: #ffffff;
+  background-color: #6d4ec8;
+  border: 10px solid  #6d4ec8;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+.download{
+  display: flex;
+  justify-content: center;
+  padding-top: 228px;
+}
+.download_warper{
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  position: relative;
+  z-index: 1;
+}
+.download_text{
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.download_text:last-child{
+  font-size: 30px;
+  color: #a496ca;
+}
+.footer_buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  padding-bottom: 260px;
+}
+.footer_logo{
+  display: flex;
+  justify-content: center;
+}
