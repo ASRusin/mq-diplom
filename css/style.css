@@ -259,18 +259,21 @@ body {
 .be_active {
   width: 50%;
   background-image: url(../images/be-active_1024.jpg);
+  background-color: #c7e2f7;
   background-position: center;
   background-size: cover;
 }
 .find_contact {
   width: 50%;
   background-image: url(../images/find-contact_1024.jpg);
+  background-color: #c7e2f7;
   background-position: center;
   background-size: cover;
 }
 .work_it {
   width: 50%;
   background-image: url(../images/work-it_1024.jpg);
+  background-color: #c7e2f7;
   background-position: center;
   background-size: cover;
 }
