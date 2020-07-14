@@ -56,7 +56,7 @@ body {
   display: flex;
   justify-content: center;
 
-  padding-top: 45px;
+  padding-top: 4.68vh;
 }
 .logo_image {
   width: 191px;
@@ -66,6 +66,9 @@ body {
   z-index: 1;
 }
 .header_title {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
   z-index: 1;
 
@@ -79,14 +82,15 @@ body {
   padding-right: 10%;
 }
 .second_title {
-  padding-left: 25%;
+  align-self: flex-end;
+  padding-left: 16%;
 }
 .header_buttons {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 
-  padding-bottom: 109px;
+  padding-bottom: 11.35vh;
 }
 .button {
   display: flex;
@@ -156,12 +160,13 @@ body {
 
   background-image: url(../images/footballer_566.png);
   background-repeat: no-repeat;
-  background-position: left 16% bottom 100%;
+  background-position: right bottom;
+  /* background-size: auto; */
 
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
+  right: calc(39.31vw + 222.22px);
+  bottom: calc(9.38vw - 110.18px);
   left: 0;
 }
 .players::after {
@@ -169,13 +174,13 @@ body {
 
   background-image: url(../images/basketballer_991.png);
   background-repeat: no-repeat;
-  background-position: right 16% bottom 100%;
+  background-position: left bottom;
 
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: calc(9.91vh - 15.19px);
+  left: calc(42.54vw - 3.85px);
 }
 
 .content_title {
@@ -421,13 +426,13 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding-top: 228px;
+  padding-top: 23.75vh;
 }
 .download_warper {
   display: flex;
   flex-direction: column;
 
-  padding-left: 35px;
+  padding-left: 1.8%;
 
   position: relative;
   z-index: 1;
@@ -448,11 +453,11 @@ body {
   display: flex;
   justify-content: center;
 
-  padding-bottom: 110px;
+  padding-bottom: 11.46vh;
 }
 .footer_logo {
   display: flex;
   justify-content: center;
 
-  padding-bottom: 65px;
+  padding-bottom: 6.77vh;
 }
