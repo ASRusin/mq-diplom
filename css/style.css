@@ -179,7 +179,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: calc(9.91vh - 15.19px);
+  bottom: calc(9.91vw - 15.19px);
   left: calc(42.54vw - 3.85px);
 }
 
