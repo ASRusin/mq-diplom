@@ -294,26 +294,22 @@ body {
   width: 100%;
   height: 100%;
 }
+.images{
+  width: 100%;
+  height: 100%;
+}
+
 .be_active {
   width: 50%;
-
-  background-image: url(../images/be-active_1024.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: #cae6fc;
 }
 .find_contact {
   width: 50%;
-
-  background-image: url(../images/find-contact_1024.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: #606441;
 }
 .work_it {
   width: 50%;
-
-  background-image: url(../images/work-it_1024.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: #425883;
 }
 .news {
   display: flex;
