@@ -206,7 +206,7 @@
     padding-left: 5px;
   }
   .content {
-    height: 190vh;
+    height: 110vh;
   }
   .athlets::after {
     background-image: url(../images/footballer_192.png);
@@ -247,16 +247,16 @@
     font-size: 15px;
   }
   .article {
-    height: 20%;
+    min-height: 20%;
   }
   .article:first-child {
     background-color: #fafafa;
   }
   .article:last-child {
-    height: 20%;
+    min-height: 20%;
   }
   .article:nth-child(3n + 3) {
-    height: 25%;
+    min-height: calc(25% - 24px);
   }
 
   .player_article {
