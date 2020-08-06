@@ -37,6 +37,7 @@ body {
   background-size: cover;
 
   position: relative;
+  z-index: 5;
 }
 .header::after {
   content: "";
@@ -156,33 +157,30 @@ body {
   min-height: 1000px;
 
   background-color: #ffffff;
+ 
 }
-.athlets::after {
-  content: "";
-
-  background-image: url(../images/footballer_566.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  /* background-size: auto; */
-
-  position: absolute;
-  top: 0;
-  right: calc(39.31vw + 222.22px);
-  bottom: 100px;
-  left: 0;
+.athlets{
+  z-index: 1;
 }
-.players::after {
-  content: "";
-
-  background-image: url(../images/basketballer_991.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-
+.image_athlet{
   position: absolute;
-  top: 0;
+  right: 55%;
+  bottom: 11%;
+}
+.image_player{
+  position: absolute;
+  left: 40%;
+  bottom: 22%;
+
+}
+.player_wraper{
+  position: absolute;
   right: 0;
-  bottom: calc(4.69vw + 124.91px);
-  left: calc(42.54vw - 3.85px);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  
 }
 
 .content_title {
@@ -308,6 +306,7 @@ body {
 .find_contact {
   width: 50%;
   background-color: #606441;
+  order: 1;
 }
 .work_it {
   width: 50%;
@@ -329,6 +328,7 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
 .news_article {
   display: flex;
   flex-direction: column;
@@ -336,10 +336,11 @@ body {
   box-sizing: border-box;
   width: 50%;
   height: 100%;
+  
 
   padding-left: calc((168px / 2) + 1%);
 }
-.news_article:nth-child(odd) {
+.news:nth-child(even)>.news_article{
   padding-left: calc(7.77vw - 55.75px);
 }
 .rectangle {
@@ -351,8 +352,6 @@ body {
   position: absolute;
   top: calc(40% - (155px / 2));
   left: calc(50% - (168px / 2));
-  right: calc(50% - (168px / 2));
-  bottom: calc(60% - (155px / 2));
 
   width: 168px;
   height: 155px;
