@@ -153,46 +153,47 @@ body {
 
 .content {
   width: 100%;
-  height: 100vh;
-  min-height: 1000px;
-
   background-color: #ffffff;
- 
 }
-.athlets{
+.athlets {
   z-index: 1;
 }
-.image_athlet{
+.image_athlet {
   position: absolute;
   right: 55%;
-  bottom: 11%;
+  top: 0;
 }
-.image_player{
+.image_player {
   position: absolute;
   left: 40%;
-  bottom: 22%;
-
+  top: 0;
 }
-.player_wraper{
+.player_wraper {
   position: absolute;
   right: 0;
   left: 0;
-  top: 0;
+  top: -27px;
   bottom: 0;
   overflow: hidden;
-  
 }
-
+.athlet_wraper {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -18px;
+  bottom: 0;
+  overflow: hidden;
+}
 .content_title {
   display: flex;
   align-items: flex-end;
 
-  height: 25%;
   font-size: 80px;
   font-weight: 700;
   color: #e7e7e7;
   text-transform: uppercase;
-
+  padding-bottom: 30px;
+  padding-top: 100px;
   margin: 0;
 }
 .athlete_title {
@@ -206,20 +207,19 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  min-height: 20%;
-  
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 .article:last-child {
-  min-height: 30%;
+  padding-bottom: 100px;
+  padding-top: 80px;
 }
 .article:nth-child(3n + 3) {
-  min-height: 25%;
 }
 .athlete_article:last-child {
   background-color: #5e42b0;
 }
-.athlete_article:nth-child(3n) {
+.athlete_article:nth-child(2n) {
   background-color: #f6f4fa;
 }
 .article_title {
@@ -269,6 +269,7 @@ body {
 }
 .article_text {
   font-size: 20px;
+  line-height: 28px;
 }
 .last_article {
   color: #ffffff;
@@ -283,7 +284,7 @@ body {
 .player_article:last-child {
   background-color: #0a0e34;
 }
-.player_article:nth-child(3n) {
+.player_article:nth-child(2n) {
   background-color: #f5f6f7;
 }
 .last_number_player {
@@ -336,11 +337,10 @@ body {
   box-sizing: border-box;
   width: 50%;
   height: 100%;
-  
 
   padding-left: calc((168px / 2) + 1%);
 }
-.news:nth-child(even)>.news_article{
+.news:nth-child(even) > .news_article {
   padding-left: calc(7.77vw - 55.75px);
 }
 .rectangle {
@@ -385,6 +385,7 @@ body {
 }
 .news_text {
   font-size: 24px;
+  line-height: 1.25;
   color: #000000;
 
   padding-right: 10vw;
