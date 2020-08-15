@@ -1,3 +1,8 @@
+@media (max-width: 1500px) and (min-width: 961px){
+  .news_title{
+    font-size: calc(5.56vw - 3.48px);
+  }
+}
 /* Адаптация изображений */
 
 @media (min-width: 1921px) {
